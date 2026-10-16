@@ -64,6 +64,6 @@ Covered:
 ## After creating a project from this template
 
 - [ ] Rename the project in `pyproject.toml` and this README
-- [ ] Set your own `SECRET_KEY` in `.env`
+- [ ] Set your own `SECRET_KEY` and change `.env.example` to `env`
 - [ ] Point `DATABASE_URL` to your target database
 - [ ] Run `uv run pytest` to check everything works
