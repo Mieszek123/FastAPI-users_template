@@ -44,7 +44,8 @@ async def test_login_user(client):
 @pytest.mark.asyncio
 async def test_login_token_user(client):
     await register(client, EMAIL, PASSWORD)
-    data = await login(client, EMAIL, PASSWORD)
+    response = await login(client, EMAIL, PASSWORD)
+    data = response.json()
     assert "access_token" in data
     assert data["token_type"] == "bearer"
 
